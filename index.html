@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Sawasdee</title>
+        <link rel="icon" type="image/png" href="./img/LOGO.png">
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Sawasdee ist ein Massagestudio im Odenwald. Frau Sukanya Becker bietet hierbei die hawaiianische Lomi Lomi Nui Massage an, die nicht nur den Körper, sondern auch die ganzen Seele, entspannt">
+        <meta name="theme-color" content="#937EC3"/>
+
+        <style>
+            :root{
+                --bannercolor: #937EC3;
+                --bordercolor: #645BAA;
+                --sectionColor1: #bfade1;
+                --sectionColor2: #ebc8e8;
+                --bannerTextColor: #ffffff;
+                --defaultColor: #fff;
+            }
+
+            body {
+                padding: 0%;
+                margin: 0%;
+                justify-content: center;
+                justify-items: center;
+                background-color: var(--defaultColor);
+            }
+
+            @font-face {
+                font-family: "HeaderFont";
+                src: url("./img/FRSCRIPT.TTF");
+            }
+
+            header {
+                height: 10svh;
+                background-color: var(--bannercolor);
+                position: sticky;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5cqw;
+                font-family: "HeaderFont";
+                top: 0;
+                z-index: 1;
+                color: var(--bannerTextColor);
+                text-shadow: 1px 1px 1px #000;
+            }
+
+            footer {
+                height: 10svh;
+                width: 100%;
+                background-color: var(--bannercolor);
+                position: fixed;
+                top: 90svh;
+                color: var(--bannerTextColor);
+                font-weight: 600;
+                text-shadow: 1px 1px 1px #000;
+            }
+
+            .main {
+                height: 82.5svh;
+                background-color: var(--mainbackgroundcolor);
+                width: 100%;
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                scroll-behavior: smooth;
+            }
+
+            .main::-webkit-scrollbar { 
+                display: none;
+            }
+
+            .iconcontainer {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon {
+                flex-grow: 1;
+                font-size: 2.5svh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-family: Arial, sans-serif;
+            }
+
+            section {
+                width: 90%;
+                margin: auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .filler {
+                height: 3svh;
+                width: 100%;
+            }
+
+            .SectionTitle {
+                font-size: 4cqh;
+                margin-bottom: 5svh;
+                font-weight: 600;
+            }
+
+            .SectionContent {
+                font-size: 2cqh;
+                margin-bottom: 2svh;
+            }
+
+            .s1 {
+                border-bottom: solid .5cqh var(--sectionColor1);
+                border-radius: 2px;
+            }
+
+            .s2 {
+                border-bottom: solid .5cqh var(--sectionColor2);
+                border-radius: 2px;
+            }
+
+            .GreetingPC {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: center;
+                
+            }
+
+            .GreetingMobile {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                display: none;
+                text-align: center;
+            }
+
+            @media (max-width: 1380px) {
+                .GreetingMobile{
+                    display: flex;
+                }
+
+                .GreetingPC{
+                    display: none;
+                }
+            }
+
+            .Impressum {
+                height: 5svh;
+                display: flex;
+                margin-bottom: 2svh;
+                align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                font-size: 2.5cqh;
+            }
+
+            div.Impressum img {
+                margin-right: 20px;
+            }
+
+            .Einblick{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div.Einblick img {
+                border-radius: 20px;
+                border: solid .75cqh var(--bannercolor);
+                height: 25svh;
+            }
+
+            .Einblick:nth-child(4n) {
+                flex-basis: 100%;
+            }
+
+            @media (max-width: 1380px) {
+                .text{
+                    text-align: center;
+                    margin-top: 2svh;
+                    margin-bottom: 2svh;
+                }
+            }
+
+            .text {
+                font-size: 110%;
+            }
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--defaultColor);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img alt="Logo von Sawasdee" src="./img/LOGO.png" style="height: 90%;">
+            <div style="font-size: 8cqh; align-self: end;">Sawasdee</div>
+        </header>
+
+        <div class="main">
+            <div class="filler"></div>
+            <section>
+                <div class="SectionTitle"><span class="s1">Über mich</span></div>
+                <div class="SectionContent">
+                    <div class="GreetingPC">
+                        <div>
+                            <img alt="Bild von Sukanya Becker" src="./img/SukanyaGreeting.png" style="height: calc(23cqh - 16px); border-radius: 100%; border: solid 8px var(--bannercolor); flex-grow: 1;">
+                        </div>
+                        <div style="height: 23cqh; flex-grow: 1; display: flex;">
+                            <div style="width: 6%;"></div>
+                            <div style="width: 4%; display: flex; align-items: center; transform: rotate(180deg);">
+                                <div style="background-color: var(--bannercolor); width: 100%; aspect-ratio: 1 / 1; transform: rotate(45deg); margin-left: -50%;"></div>
+                            </div>
+                            <div style="width: 90%; border-radius: 2cqh; border: solid 5px var(--bannercolor); background-color: var(--bannercolor); color: var(--bannerTextColor); display: flex; justify-content: center; align-items: center;"><div style="width: 95%; font-size: 3cqh;">Herzlich Willkommen bei Sawasdee, ich bin Sukanya Becker. <br><br> Als zertifizierte Masseurin möchte ich Ihnen eine entspannende hawaiianische Lomi Lomi Massage, hier im Odenwald, anbieten.</div></div>
+                        </div>
+                    </div>
+                    <div class="GreetingMobile">
+                        <div>
+                            <img alt="Bild von Sukanya Becker" src="./img/SukanyaGreeting.png" style="height: calc(23cqh - 16px); border-radius: 100%; border: solid 8px var(--bannercolor); flex-grow: 1; margin-bottom: 2svh;">
+                        </div>
+                        <div style="width: 8%; display: flex; align-items: center; transform: rotate(180deg); margin-bottom: calc(-4cqw);">
+                            <div style="background-color: var(--bannercolor); width: 100%; aspect-ratio: 1 / 1; transform: rotate(45deg);"></div>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 90%; border-radius: 2cqh; border: solid 5px var(--bannercolor); background-color: var(--bannercolor); color: var(--bannerTextColor); z-index: 1; padding-bottom: 20px; padding-top: 20px;">
+                                <div style="width: 95%; font-size: 3cqh;">
+                                    Herzlich Willkommen bei Sawasdee, ich bin Sukanya Becker. <br><br> 
+                                    Als zertifizierte Masseurin möchte ich Ihnen eine entspannende hawaiianische Lomi Lomi Massage, hier im Odenwald, anbieten.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="filler" id="Einblick" style="height: 5svh;"></div>
+            <section>
+                <div class="SectionTitle" style="margin-bottom: 3svh;"><span class="s1">Einblick</span></div>
+                <div class="SectionContent">
+                    <div style="margin-bottom: 2svh; font-size: 2.5cqh">
+                        Ich massiere seit 2006 und wurde bereits mehrfach zertifiziert.<br><br>
+			Aktuell biete ich die hawaiianische Energiemassage Lomi Lomi an.
+                    </div>
+                    <div class="filler" style="height: 2svh;"></div>
+                    <div class="Einblick">
+                        <img alt="Bild von Sukanya Becker beim Massieren" src="./img/Working1.jpg">
+                        <div style="width: 5%;"></div>
+                        <div class="text" style="flex-grow: 1;">
+                            Die Lomi Lomi Nui Massage ist eine traditionelle Massage, die aus Hawaii stammt<br>
+                            und darauf abzielt den Körper, Geist und Seele zu entspannen.<br><br>
+                            Bei mir können Sie 60 oder 90 Minuten von dem stressigen Alltag abschalten<br>
+                            und Ihre wohlverdiente Ruhe genießen.<br><br>
+			    Es handelt sich hierbei <b>nicht</b> um Erotik!<br><br>
+                            Sie finden mich in der Spessartstr. 11 in Michelstadt.
+                        </div>
+                        <div style="flex-basis: 100%; height: 2svh;"></div>
+
+                        <img alt="Weiteres Bild von Sukanya Becker beim Massieren" src="./img/Working2.jpg">
+                        <div style="width: 5%;"></div>
+                        <div class="text" style="flex-grow: 1;">
+                            <b style="font-size: 125%;" class="s1">Mein Resultat</b><br><br>
+                            Bisher waren meine Kunden immer entspannt und zufrieden nach der Massage.<br><br>
+                            Gerade in den letzten Minuten der Massage spürt man die innere Ruhe, die beim Massieren entstanden ist.<br><br>
+                            Es freut mich immer sehr, wenn meine Kunden zufrieden das Haus verlassen.                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="filler" id="Angebot" style="height: 5svh;"></div>
+            <section>
+                <div class="SectionTitle" style="margin-bottom: 3svh;"><span class="s1" >Angebot</span></div>
+                <div class="SectionContent">
+                    <div style="margin-bottom: 2svh; font-size: 2.5cqh">Möchten Sie einen Termin vereinbaren oder haben Sie noch eine Frage, so kontaktieren Sie mich bitte während der Öffnungszeiten unter</div>
+                    <div class="Impressum"><img alt="Telefon Symbol" src="./img/Call.png" style="height: 100%"><div style="flex-grow: 1;">0178 2799619</div></div>
+                    <div class="Impressum"><img alt="E-Mail Symbol" src="./img/Mail.png" style="height: 100%"><div style="flex-grow: 1;">sawasdee.odw@gmail.com</div></div>
+                    <div class="Impressum"><img alt="Euro Symbol" src="./img/Euro.webp" style="height: 100%"><div style="flex-grow: 1;">Preis in Bar</div></div>
+                    <div class="Impressum"><img alt="Leeres Symbol" src="./img/Empty.png" style="height: 100%"><div style="flex-grow: 1;">60 Minuten - 50€</div></div>
+		    <div class="Impressum"><img alt="Leeres Symbol" src="./img/Empty.png" style="height: 100%"><div style="flex-grow: 1;">90 Minuten - 70€</div></div>
+		    <div class="Impressum"><img alt="Leeres Symbol" src="./img/Empty.png" style="height: 100%"><div style="flex-grow: 1;">Gutscheine auf Anfrage</div></div>
+                    <div class="Impressum"><img alt="Uhren Symbol" src="./img/Clock.png" style="height: 100%"><div style="flex-grow: 1;">Öffnungszeiten (Mo. - Fr.)<br>10:00 - 19:00 Uhr</div></div>
+                    <div class="Impressum"><img alt="Terminkalender Symbol" src="./img/Calendar.png" style="height: 100%"><div style="flex-grow: 1;">Termine nach Vereinbarung</div></div>
+                    <div style="margin-top: 3svh; font-size: 2.5cqh">Eine Rückmeldung erfolgt in der Regel innerhalb eines Werktages</div>
+                </div>
+            </section>
+
+            <div class="filler" id="Impressum" style="height: 5svh;"></div>
+            <section>
+                <div class="SectionTitle"><span class="s1">Impressum</span></div>
+                <div class="SectionContent">
+                    <div class="Impressum"><img alt="Generisches Personensymbol" src="./img/Person.png" style="height: 100%"><div style="flex-grow: 1;">Sukanya Becker</div></div>
+                    <div class="Impressum"><img alt="Logo von Sawasdee Symbol" src="./img/LOGO.png" style="height: 100%;"><div style="flex-grow: 1;">Sawasdee</div></div>
+                    <div class="Impressum"><img alt="Standort Symbol" src="./img/Location.png" style="height: 100%"><div style="flex-grow: 1;">Spessartstr. 11 (64720 Michelstadt)</div></div>
+                    <div class="Impressum"><img alt="Telefon Symbol" src="./img/Call.png" style="height: 100%"><div style="flex-grow: 1;">0178 2799619</div></div>
+                    <div class="Impressum"><img alt="E-Mail Symbol" src="./img/Mail.png" style="height: 100%"><div style="flex-grow: 1;">sawasdee.odw@gmail.com</div></div>
+                </div>
+            </section>
+
+            <div class="filler"></div>
+
+        </div>
+        
+        <footer>
+            <div class="iconcontainer">
+                <div class="icon"><div class="iconImg"><a href="#Einblick"><img alt="Winkende Hand" src="./img/WavingHand.png" style="height: calc(5cqh);"></div><div class="iconText">Einblick</a></div></div>
+                <div class="icon"><div class="iconImg"><a href="#Angebot"><img alt="Stilisiertes Etikett" src="./img/PriceTag.png" style="height: calc(5cqh);"></div><div class="iconText">Angebot</a></div></div>
+                <div class="icon"><div class="iconImg"><a href="#Impressum"><img alt="Telefon Symbol" src="./img/Contact.png" style="height: calc(5cqh);"></div><div class="iconText">Kontakt</a></div></div>
+            </div>
+        </footer>
+    </body>
+</html>
